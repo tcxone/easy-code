@@ -1,5 +1,6 @@
 import re
-def ecode(line):
+import sys
+def ecode(line,l):
     try:
         code = ""
         #去掉末尾的换行符
@@ -26,15 +27,17 @@ def ecode(line):
             code = line[4:i]+ " = input(" + tishi_str + ")"
         else:
             #无操作
-            print("error")
+            print("ERROR : (line " + str(l) + ") : 未知操作")
         #print(code)
         with open("out.py","a") as file:
             file.write(code + "\n")
     except:
-        print("error")
+        print("ERROR (line " + str(l) + ") : 未知错误")
 
 
-with open("HelloWorld.ecode") as f:
+with open(sys.argv[1]) as f:
+    l = 1
     for line in f:
-        ecode(line)
+        ecode(line,l)
+        l = l + 1
 print("done")

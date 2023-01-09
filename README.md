@@ -6,17 +6,15 @@
 
 ## 使用方法
 
-下载本项目到本地后，打开`main.py`
+下载本项目到本地后
 
-修改第`31`行的`out.py`为编译结果
+```
+cd easy-code
+```
 
-修改第`37`行的`HelloWorld.ecode`为需要编译的`ecode`源文件
-
-然后运行`main.py`
-
-就会在当前目录生成编译结果，就是刚才修改的`out.py`
-
-最后运行`out.py`或者是你刚才修改过的文件就可以看到运行结果啦
+```
+sh run.sh HelloWorld.ecode
+```
 
 ## 语法
 
