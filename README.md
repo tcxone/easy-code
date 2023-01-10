@@ -77,3 +77,26 @@ sh run.sh HelloWorld.ecode
 ```
 #输入 n（"请输入n的值"）
 ```
+
+### 5，插入
+
+```
+#插入 python代码
+```
+
+#### 示例
+
+```
+#插入 print("abc")
+#插入 number = 7
+#插入 guess = -1
+#插入 print("数字猜谜游戏!")
+#插入 while guess != number:
+#插入     guess = int(input("请输入你猜的数字："))
+#插入     if guess == number:
+#插入         print("恭喜，你猜对了！")
+#插入     elif guess < number:
+#插入         print("猜的数字小了...")
+#插入     elif guess > number:
+#插入         print("猜的数字大了...")
+```

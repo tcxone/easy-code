@@ -25,6 +25,8 @@ def ecode(line,l):
                     break
                 i = i + 1
             code = line[4:i]+ " = input(" + tishi_str + ")"
+        elif caozuo_str == "插入":
+            code = line[4:]
         else:
             #无操作
             print("ERROR : (line " + str(l) + ") : 未知操作")
